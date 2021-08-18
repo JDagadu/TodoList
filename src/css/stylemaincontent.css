@@ -1,0 +1,13 @@
+#content-main{
+    /* height: %; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen  and (max-width:450px) {
+    
+    #content-main{
+        margin-left: 0;
+    }
+}

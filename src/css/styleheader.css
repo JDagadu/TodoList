@@ -1,0 +1,43 @@
+/* *{
+    margin:0;
+    padding:0;
+} */
+body{
+    width: 100%;
+}
+.fas{
+    color: #fff;
+}
+.content-body{
+    position: absolute;
+    top: 40px;
+}
+
+
+.headerbar{
+    background-color: #db4c3f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    /* margin-left:  30px;
+    margin-right: 30px; */
+}
+
+.content-body{
+    display: flex;
+}
+/* #content-main{
+    display: flex;
+} */
+
+/* body{
+    display: flex;
+    
+} */
+
+/* 
+.right-header-icons{
+
+} */
