@@ -2,8 +2,59 @@
 .sidebar{
     background-color: #fafafa;
     position: fixed;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 10px;
+    /* padding-bottom: 10px; */
     /* height: 100%; */
 
+}
+.sidemenu-main{
+    width: 100%;
+    padding-left: 10px;
+    /* text-align: center; */
+}
+.sidemenutop{
+    margin-bottom: 20px;
+}
+/* .sidebar-ProjectItems{
+    display: flex;
+    width:100%;
+
+  
+    align-items: center;
+} */
+.sidebar-CustomProjectItems{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* padding-left: 20px; */
+}
+
+.sidebar-customProjectslist{
+    padding-top: 10px;
+}
+
+.Customsidemenu-main{
+    padding: 5px 0 5px 10px
+}
+
+.custom-color{
+    width:7px;
+    height: 7px;
+    border-radius: 4px;
+    /* border: 1px solid black; */
+}
+
+.customprojectslistdiv{
+    display: flex;
+    width:100%;
+    align-items: center;
+}
+
+.sidebar-ProjectItems .fas{
+    color:#db4c3f;
+    width: 10%;
 }
 
 @media only screen  and (max-width:450px) {
