@@ -1,5 +1,6 @@
 import {elt} from '../../restaurantpage/src/domelementbuilder';
 import {addCustomProject,deleteCustomProject,getMainMenu,getCustomProjects} from './sidebardatamanager';
+import {hideUnhide} from './utilityfunctions'
 
 console.log(addCustomProject('Project1','red'));
 addCustomProject('Project1','green');
@@ -22,7 +23,30 @@ function buildProjectItems(arr){
             if(a.toLowerCase()=='inbox')
             return elt('li',{className:'sidebar-ProjectItems sidemenutop'},elt('div',{className:'customprojectslistdiv'},elt('i',{className:`fas fa-${a.toLowerCase()}`}),elt('h4',{className:`${a} sidemenu-main`,id:a},a))); 
             else 
-            return elt('li',{className:'sidebar-ProjectItems'},elt('div',{className:'customprojectslistdiv'},elt('i',{className:`fas fa-angle-down`}),elt('h4',{className:`${a} sidemenu-main`,id:a},a),elt('i',{className:`fas fa-plus fa-xs`})),
+            return elt('li',{className:'sidebar-ProjectItems'},elt('div',{className:'customprojectslistdiv'},elt('i',{className:`fas fa-angle-down`,onclick(event){
+                //if(event.target !==document.querySelector('.fa-plus'))
+                // alert('clicked')
+                if(document.querySelector('.fa-angle-down')){
+                    document.querySelector('.fa-angle-down').className = 'fas fa-angle-right'
+                }else if(document.querySelector('.fa-angle-right')){
+                    document.querySelector('.fa-angle-right').className = 'fas fa-angle-down'
+                }
+                 hideUnhide(document.querySelector('.sidebar-customProjectslist'))
+             }}),elt('h4',{className:`${a} sidemenu-main`,id:a,onclick(event){
+               // if(event.target !==document.querySelector('.fa-plus'))
+                // alert('clicked')
+                if(document.querySelector('.fa-angle-down')){
+                    document.querySelector('.fa-angle-down').className = 'fas fa-angle-right'
+                }else if(document.querySelector('.fa-angle-right')){
+                    document.querySelector('.fa-angle-right').className = 'fas fa-angle-down'
+                }
+                 hideUnhide(document.querySelector('.sidebar-customProjectslist'))
+             }},a),elt('i',{className:`fas fa-plus fa-xs`,onclick(event){
+                console.log(document.querySelector('.div-custom-project-menu'))
+                hideUnhide(document.querySelector('.div-custom-project-menu'))
+                    
+                
+            }})),
                 elt('ul',{className:'sidebar-customProjectslist'},...buildCustomProjectItems(getCustomProjects()))); 
             
          });
@@ -31,6 +55,7 @@ function buildProjectItems(arr){
 }
 
 console.log(buildCustomProjectItems(getCustomProjects()))
+
 function buildCustomProjectItems(arr){
     return  arr.map(a=> {
         // if(!a.name.toLowerCase()=='inbox')

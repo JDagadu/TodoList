@@ -5,6 +5,8 @@
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 10px;
+    z-index: 1;
+    /* display: block; */
     /* padding-bottom: 10px; */
     /* height: 100%; */
 
@@ -30,9 +32,16 @@
     align-items: center;
     /* padding-left: 20px; */
 }
-
+.customprojectslistdiv{
+    cursor: pointer;
+}
 .sidebar-customProjectslist{
     padding-top: 10px;
+    display: block;
+}
+
+.hidden{
+    display: none !important;
 }
 
 .Customsidemenu-main{
@@ -59,7 +68,7 @@
 
 @media only screen  and (max-width:450px) {
     
-    .sidebar{
+    /* .sidebar{
         display: none;
-    }
+    } */
 }

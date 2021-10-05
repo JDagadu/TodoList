@@ -1,0 +1,120 @@
+.div-add-newtodo-form{
+    display:flex;
+    /* display: none; */
+    z-index: 99999999;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+.div-parent-form{
+    background-color: white;
+    width: 50%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* padding: 1rem; */
+    
+}
+
+.newtodoform > .todo-fields-section> input{
+    border:1px solid #ddd;
+    width: 100%;
+    
+}
+.newtodoform  > .todo-fields-section label{
+    width:100%;
+    text-align: left;
+    /* padding: 0 10px ; */
+    /* height: 40px; */
+    /* border-radius: 3px; */
+}
+
+.newtodoform  > .todo-fields-section input{
+    width:100%;
+    text-align: left;
+    /* padding: 0 10px ; */
+    height: 35px;
+    border-radius: 3px;
+    padding-top: 5px;
+}
+
+
+.div-custom-menu-buttons,.todo-fields-section,.div-custom-menu-title{
+    width: 100%;
+    display: flex;
+
+}
+.div-new-todo-buttons{
+    height: 50px;
+    width: 100%;
+    /* border:1px solid #ddd; */
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.todo-fields-section{
+    /* height: 200px; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 0 20px;
+    display: block;
+
+
+}
+.div-custom-menu-title{
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border:1px solid #ddd;
+
+}
+
+.div-new-todo-buttons>#div-custom-cancel-button,#div-custom-add-button{
+    margin: 10px;
+}
+.div-custom-button{
+    font-weight: bold;
+
+    /* margin-right: 0px; */
+}
+
+.project-title-todoitem-div{
+    display: flex;
+    justify-content: space-between;
+}
+.new-todo-priority,.new-todo-project{
+    display: block;
+}
+.newtodo-Form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.fa-btn-newtodo{
+    color: black;
+}
+
+@media only screen  and (max-width:450px) {
+    
+    /* .sidebar{
+        display: none;
+    } */
+
+    .div-parent-form{
+        background-color: white;
+        width: 95%;
+        /* height: 100%; */
+        display: flex;
+        flex-direction: column;
+        /* padding: 1rem; */
+        
+    }
+}
