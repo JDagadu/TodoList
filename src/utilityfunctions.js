@@ -16,6 +16,7 @@ function deleteObjectFromArray(arr,data){
     return arr;
 }
 
+
 function hideUnhide(element){
     // console.log(element);
     // console.log(document.querySelector('.sidebar-customProjectslist'));

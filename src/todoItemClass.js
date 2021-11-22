@@ -1,7 +1,7 @@
 import {rand} from './randomnumbergenerator'
 class TodoItem {
 
-    constructor(title,description,dueDate,priority=1,subTask=[],project='Default',completed=false,createdOn=new Date()){
+    constructor(title,description,dueDate,priority='low',project='Inbox',subTask=[],completed=false,createdOn=new Date()){
         this.id = Math.floor(Date.parse(createdOn)+(rand(10,100)));
         this.title = title;
         this.description = description;

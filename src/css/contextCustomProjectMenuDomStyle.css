@@ -50,7 +50,9 @@
     border-radius: 3px;
     padding-top: 5px;
 }
-
+.div-custom-color{
+    padding: 10px;
+}
 
 .div-custom-menu-buttons,.div-custom-menu-fields,.div-custom-menu-title{
     width: 100%;

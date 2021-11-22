@@ -39,11 +39,26 @@
     padding-right: 10px;
 }
 .todo-list-item{
+    cursor: pointer;
     border-bottom: 1px solid #f0f0f0;
     padding-bottom: 0.5em;
     margin-bottom: 0.6em;
     width: 80%;
 }
+.title-true{
+    text-decoration: line-through;
+}
+.flag-low{
+color: blue !important;
+}
+
+.flag-medium{
+    color: orange !important;
+    }
+
+    .flag-high{
+        color: red !important;
+        }
 .todo-item-title{
     width:95%
 }

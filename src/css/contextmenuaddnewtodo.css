@@ -57,6 +57,13 @@
     display: flex;
     justify-content: flex-end;
 }
+.new-todo-description{
+    width: 100%;
+    border:1px solid #ddd;
+}
+.new-todo-label{
+    padding: 5px 0;
+}
 .todo-fields-section{
     /* height: 200px; */
     flex-direction: column;

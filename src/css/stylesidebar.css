@@ -30,7 +30,13 @@
     display: flex;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
     /* padding-left: 20px; */
+}
+.project-color-name-group{
+    display:flex;
+    align-items: center;
 }
 .customprojectslistdiv{
     cursor: pointer;
@@ -60,6 +66,9 @@
     width:100%;
     align-items: center;
 }
+/* .fa-ellipsis-h{
+    justify-self: flex-end;
+} */
 
 .sidebar-ProjectItems .fas{
     color:#db4c3f;
